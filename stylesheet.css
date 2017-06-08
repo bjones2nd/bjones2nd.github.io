@@ -1,0 +1,96 @@
+#getUserName {
+  margin: 10px auto; }
+
+p {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+.navbar {
+  overflow: hidden;
+  background: #2980B9;
+  border-bottom: 2px solid #33CCCC; }
+  .navbar .navbar-toggle {
+    color: #33CCCC; }
+  .navbar .navbar-brand {
+    color: #ECF0F1; }
+  .navbar button {
+    background: none;
+    border: none;
+    color: #33CCCC; }
+  .navbar .navbar-nav li a {
+    color: #ECF0F1; }
+
+.jumbotron {
+  background: linear-gradient(#2980B9, #2C3E50);
+  color: #ECF0F1;
+  border-bottom: 5px solid #ECF0F1; }
+  .jumbotron img {
+    width: 100%; }
+  .jumbotron p {
+    color: #33CCCC; }
+  .jumbotron a {
+    margin: 6px; }
+  @media screen and (max-width: 500px) {
+    .jumbotron a {
+      display: block;
+      width: 100%;
+      margin: 6px auto; } }
+
+#toolkit {
+  text-align: center; }
+  #toolkit .inner-wrapper {
+    margin: 45px auto; }
+  #toolkit .col-sm-4 {
+    margin: 20px auto; }
+  #toolkit h1 {
+    color: #2980B9; }
+  #toolkit h2 {
+    font-family: 'Audiowide', cursive;
+    background: #2980B9;
+    border: 2px solid #33CCCC;
+    border-radius: 5px;
+    padding: 5px;
+    color: white; }
+  #toolkit p {
+    font-size: 24px; }
+  #toolkit img {
+    width: 50%; }
+
+#projects {
+  background: #ECF0F1;
+  margin: 40px auto;
+  padding: 20px 0; }
+  #projects ul li a {
+    color: #2980B9; }
+  #projects ul li a:hover {
+    background: #2980B9;
+    color: #ECF0F1; }
+  @media screen and (max-width: 500px) {
+    #projects .btn {
+      display: block;
+      width: 100%; } }
+  #projects h1 {
+    color: #2980B9; }
+  #projects h2 {
+    color: #33CCCC; }
+  #projects p {
+    font-size: 20px; }
+  #projects .btn {
+    margin: 15px auto; }
+
+#testimonials {
+  margin: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 5px dashed #33CCCC;
+  background: linear-gradient(#2980B9, #2C3E50);
+  color: white; }
+  #testimonials h1 {
+    margin: 20px auto;
+    color: #33CCCC; }
+  #testimonials strong {
+    color: #33CCCC; }
+
+footer {
+  color: #2C3E50; }
+
+/*# sourceMappingURL=stylesheet.css.map */
