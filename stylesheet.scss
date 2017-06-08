@@ -1,0 +1,163 @@
+$primary-color:#2980B9;
+$secondary-color:#2C3E50;
+$accent-color:#33CCCC;
+$default-color:#ECF0F1;
+
+#getUserName {
+  margin: 10px auto;
+  }
+  
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+.navbar {
+  overflow: hidden;
+  background: $primary-color;
+  border-bottom: 2px solid $accent-color;
+  
+  .navbar-toggle {
+    color: $accent-color;
+	}
+	
+  .navbar-brand {
+     color: $default-color ;
+  }
+  
+  button {
+    background: none;
+	border: none;
+	color: $accent-color;
+	}
+	
+  .navbar-nav {
+    li {
+      a {
+        color: $default-color;
+	    }
+	  }
+	}
+  }
+  
+.jumbotron {
+  background: linear-gradient($primary-color, $secondary-color);
+  color: $default-color;
+  border-bottom: 5px solid $default-color;
+  
+  img{
+    width: 100%;
+	}
+  
+  p {
+    color: $accent-color;
+	}
+	
+  a {
+    margin: 6px;
+	}
+	
+	@media screen and (max-width: 500px) {
+	  a {
+	    display: block;
+		width: 100%;
+		margin: 6px auto;
+		}
+		}
+  }
+
+#toolkit {
+  text-align: center;
+  
+  .inner-wrapper {
+    margin: 45px auto;
+	}
+	
+  .col-sm-4 {
+    margin: 20px auto;
+	}
+	
+  h1 {
+    color: $primary-color;
+	}
+  
+  h2 {
+    font-family: 'Audiowide', cursive;
+    background: $primary-color;
+	border: 2px solid $accent-color;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	}
+	
+  p {
+    font-size: 24px;
+	}
+	
+  img{
+    width: 50%;
+	}
+	
+	}
+	
+#projects {
+  background: $default-color;
+  margin: 40px auto;
+  padding: 20px 0;
+  
+  ul {
+    li {
+	  
+	  a {
+	    color: $primary-color;
+		}
+		
+		a:hover {
+      background: $primary-color;
+	  color: $default-color;
+	  }
+	  }
+  }
+  @media screen and (max-width: 500px) {
+	  .btn {
+	    display: block;
+		width: 100%;
+		}
+		}
+  
+  h1 {
+    color: $primary-color;
+	}
+	
+  h2 {
+    color: $accent-color;
+	}
+  p {
+    font-size: 20px;
+	}
+	
+  .btn {
+    margin: 15px auto;
+	}
+  }
+  
+#testimonials {
+  margin: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  border-bottom: 5px dashed $accent-color;
+  background: linear-gradient($primary-color, $secondary-color);
+  color: white;
+  
+  h1 {
+    margin: 20px auto;
+	color: $accent-color;
+	}
+	
+  strong {
+    color: $accent-color;
+	}
+	}
+  
+footer {
+  color: $secondary-color;
+  }
