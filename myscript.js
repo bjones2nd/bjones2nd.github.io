@@ -23,7 +23,7 @@ $('#submit').on('click', function() {
 	distance: '150px',
 	delay: 1000
 	});
-	sr.reveal('#fluid-container', {
+	sr.reveal('#projects', {
 	duration: 2000,
 	origin: 'bottom',
 	distance: '100px'
