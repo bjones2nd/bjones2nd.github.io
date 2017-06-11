@@ -11,13 +11,20 @@
 </head>
 <body>
 <nav class='navbar navbar-inverse'>
-  <div class='container-fluid'>
-    <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='#myNavbar'>
+  <div class='container'>
+  <div class='row'>
+    <div class='col-md-5 col-sm-5'>
+	<div class='navbar-header'>
+    <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#myNavbar' aria-expanded="false" aria-controls="navbar">
+	 <span class='sr-only'>Toggle Navigation</span>
 	 <span class='icon-bar'></span>
 	 <span class='icon-bar'></span>
 	 <span class='icon-bar'></span>
 	</button>
-	<a href='#' class='navbar-brand'>Bruce Jones <small>Web Developer</small></a>
+	<a class='navbar-brand' href='#' >Bruce Jones <small>Web Developer</small></a>
+    </div>
+	</div>
+	<div class='col-md-7 col-sm-7'>
     <div class='collapse navbar-collapse' id='myNavbar'>
 	  <ul class='nav navbar-nav navbar-right' style='color:white'>
 	    <li><a href='#'>Home</a></li>
@@ -25,7 +32,9 @@
 		<li><a href='https://jumpshare.com/v/Zxt9rFLK9FWluRLLz35j' title='View/Download Resume PDF'>Resume</a></li>
 		<li><a href='#contact'>Contact</a></li>
 	  </ul>
+	  </div>
 	</div>
+  </div>
   </div>
 </nav>
 
@@ -33,7 +42,7 @@
 
 <div id='getUserName'>
   <div class='container'>
-  <form>
+  <form class='form'>
     <div class='form-group'>
       <input type='text' class="form-control" id='userName' placeholder='First Name (optional)' style='width:200px;display:inline;'>
       <input type='button' value='Submit' id='submit' class='btn btn-primary btn-sm'>
@@ -53,7 +62,9 @@
 	    <h1>Hi<span class='user'></span>, I'm Bruce...<br>Welcome!</h1>
 		<p>Please feel free to look and click around!</p>
 <!--Banner buttons-->
-		<a href='https://jumpshare.com/v/Zxt9rFLK9FWluRLLz35j' target='_blank' type='button' class='btn btn-success btn-lg' title='View/Download Resume PDF'>Resume</a>
+        
+		<a href='https://jumpshare.com/v/Zxt9rFLK9FWluRLLz35j' target='_blank' type='button' class='btn btn-success btn-lg' title='View/Download PDF'>Resume</a>
+		
 		<a type='button' class='btn btn-info btn-lg' href='#projects'> Projects</a>
 		<a type='button' class='btn btn-warning btn-lg' href='https://github.com/bjones2nd' target='_blank'>Github</a>
 	  </div>
@@ -159,34 +170,33 @@
 <div class='container-fluid' id='projects'>
   <div class='container'>
     <div class='row'>
-	  <div class='col-sm-9'><!--Left section of row begin (Text)-->
+	  <div class='col-sm-9'>
 	    <h1><strong><span class='user'>Hey</span>, want to see my projects?!</strong></h1>
 		<p>Click one of the buttons to view live websites and codepen projects!<br>Let's see if you 
 		notice the difference in my designs as my skills increase.</p>
-	  </div><!--Left section of row end-->
-		    
-	  <div class='col-sm-3 text-center'><!--Right section of row begin (Buttons)-->
-	    <div class='row'><!--Live Websites Button Begin-->
-	      <div class='col-sm-12'>
-	        <button class='btn btn-primary btn-lg dropdown-toggle' data-toggle='dropdown'aria-haspopup='true' aria-expanded='false'>
+	  </div>
+	  <div class='col-sm-3 text-center'>
+	    <div class='row'>
+		  <div class='col-sm-12'>
+		    <button class='btn btn-primary btn-lg dropdown-toggle' data-toggle='dropdown'aria-haspopup='true' aria-expanded='false'>
 			Live Webites <span class="caret"></span>
-		</button>
+			</button>
 			<ul class='dropdown-menu'>
 			  <li><a href='http://www.multitaskenterprise.wordpress.com' target='_blank'>Multi-task Enterprises</a></li>
 			  <li><a href='http://www.theurbancollar.com' target='_blank'>The Urban Collar</a></li>
 			</ul>
-	    	   </div>
-	    </div><!--Live Websites Button End-->
-		<div class='row'><!--Codepen Button Begin-->
+		  </div>
+		</div>
+		<div class='row'>
 		  <div class='col-sm-12'>
 		    <button class='btn btn-primary btn-lg dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
 			My Codepen <span class='caret'></span>
 			</button>
-		    <ul class='dropdown-menu'>
-		      <li><a href='https://codepen.io/BJones2nd/' target='_blank'>Public Profile</a></li>
-		    </ul>
+			<ul class='dropdown-menu'>
+			  <li><a href='https://codepen.io/BJones2nd/' target='_blank'>Public Profile</a></li>
+			</ul>
 		  </div>
-		</div><!--Codepen Button End-->
+		</div>
 	  </div>
 	</div>
   </div>
@@ -213,7 +223,7 @@
 	  process, it did not take long for me to see the passion and knowledge you had about taking The Urban Collar to 
 	  another level. Now that our website is up and running, we’ve had clients complimenting on how clean the website 
 	  looks. Thanks so much for your help and guidance.”
-	  <br><strong>Krystyl D. Mcleod $ Ashley Gill</strong></p>
+	  <br><strong>Krystyl D. Mcleod & Ashley Gill</strong></p>
 	</div>
   </div>
 </div>
@@ -223,6 +233,28 @@
 <div id='contact'>
   <div class='container'>
     <div class='row'>
+	  <div class='col-sm-6 col-sm-offset-3 well'>
+	    <h1>Contact Me</h1>
+	    <form action='contact_form.php' method='post'>
+		  <div class='form-group'>
+		    <input type='text' class='form-control' name='firstName' id='firstName' placeholder='First Name' required>
+			<br>
+			<input type='text' class='form-control' name='lastName' id='lastName' placeholder='Last Name' required>
+		  </div>
+		  <div class='form-group'>
+			<input type='text' class='form-control' name='email' id='email' placeholder='Email' required>
+		  </div>
+		  <div class='form-group'>
+		    <label for='comment'>Comments:</label>
+			<textarea type='text' class='col-sm-12' rows='5' name='comment' id='comment' required>
+			</textarea>
+		  </div>
+		  <br>
+		  <div class='form-group'>
+    		<input class='btn btn-primary btn-md' type='button' name='submit' id='form-submit' value='Submit'>
+		  </div>
+		</form>
+	  </div>
     </div>
   </div>
 </div>
@@ -231,7 +263,7 @@
 <footer>
   <div class='container'>
     <div class='row text-center'>
-	  <p><strong>Bruce Jones</strong><br>Copyright &copy;2017</p>
+	  <p><strong><a href='#'>Bruce Jones</a></strong><br>Copyright &copy;2017</p>
 	</div>
   </div>
 </footer>
