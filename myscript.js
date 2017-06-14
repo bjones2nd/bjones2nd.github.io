@@ -33,4 +33,9 @@ $('#submit').on('click', function() {
 	origin: 'top',
 	distance: '25px'
 	});
+	sr.reveal('#toolkit-opening', {
+	duration: 2000,
+	origin: 'right',
+	delay: 500
+	});
 });
