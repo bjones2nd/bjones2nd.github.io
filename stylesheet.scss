@@ -14,7 +14,7 @@ p {
 .navbar {
   overflow: hidden;
   background: $primary-color;
-  border-bottom: 2px solid $accent-color;
+  box-shadow: 0 10px 10px grey;
   
   .navbar-toggle {
     color: $accent-color;
