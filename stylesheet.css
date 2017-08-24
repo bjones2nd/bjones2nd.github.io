@@ -7,7 +7,7 @@ p {
 .navbar {
   overflow: hidden;
   background: #2980B9;
-  border-bottom: 2px solid #33CCCC; }
+  box-shadow: 0 10px 10px grey; }
   .navbar .navbar-toggle {
     color: #33CCCC; }
   .navbar .navbar-brand {
