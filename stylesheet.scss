@@ -43,6 +43,10 @@ p {
   background: linear-gradient($primary-color, $secondary-color);
   color: $default-color;
   border-bottom: 5px solid $default-color;
+	
+	#greeting {
+	  font-family: 'Orbitron', sans-serif;
+	}
   
   img{
     width: 100%;
