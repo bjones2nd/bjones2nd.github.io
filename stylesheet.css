@@ -29,6 +29,8 @@ p {
     color: #33CCCC; }
   .jumbotron a {
     margin: 6px; }
+.jumbotron #greeting {
+  font-family: 'Orbitron', sans-serif;}
   @media screen and (max-width: 500px) {
     .jumbotron a {
       display: block;
